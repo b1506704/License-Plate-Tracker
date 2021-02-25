@@ -1,0 +1,40 @@
+.search_bar_container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 65px;
+    border-radius: 5px;
+    border-bottom-style: transparent;
+    border-top-style:dotted; 
+    border-left-style:dotted; 
+    border-right-style:dotted; 
+    border-color: rgb(241, 233, 241);
+    padding-left: 25px;
+    padding-right: 18px;
+    right: 2vh; 
+    top: 13.8vh;
+    background-color: rgba(255, 255, 253, 0.26);
+}
+.search_bar_container label {
+    font-family: Sci-fi;
+    color: rgb(241, 233, 241);
+    font-size: 30px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9dd7e6, 0 0 20px rgb(123, 163, 204), 0 0 25px #0073e6, 0 0 30px #50769c, 0 0 35px #17416b;
+}
+.search_bar_container input {
+    position: relative;
+    border-style:dotted;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    font-size: 35px;
+    margin-right: 18px;
+    margin-left: 18px;
+    border-radius: 5px;
+    /* width: 100px; */
+    font-family: Subtitle;
+    background-color: rgba(255, 248, 220, 0.37);
+    backdrop-filter: 5px;
+}

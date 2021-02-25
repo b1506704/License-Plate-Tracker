@@ -1,0 +1,47 @@
+.lp_container_menu {
+    position: relative;
+    border: transparent;
+    background: #00010271;
+    user-select: none;
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    min-height: 300px;
+    height: 400px;
+    width: 350px;
+    cursor: grab;
+    border-radius: 5px;
+    transition: all 0.4s ease-out;
+    z-index: 999;
+  }
+  .lp_container_menu:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9dd7e6;
+  }
+  .lp_container_menu .title_bar {
+    position: sticky;
+    top: 0px;
+    border: transparent;
+    background: #3a536b2c;
+    user-select: none;
+    overflow: hidden;
+    height: 40px; 
+    color: aliceblue;
+    font-family: Sci-fi;
+    font-size: 25px;
+    backdrop-filter: blur(3px);
+    padding-left: 150px;
+    padding-top: 8px;
+    width: 100%;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9dd7e6, 0 0 20px rgb(123, 163, 204), 0 0 25px #0073e6, 0 0 30px #50769c, 0 0 35px #45eb8a;
+    /* cursor: grab; */
+  }
+  
+.user_info {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    background: transparent;
+}  
+.user_info label {
+    margin: 5px; 
+}
+  
