@@ -1,20 +1,17 @@
 import { FETCH_ALL, UPLOAD } from '../constants/actionTypes';
 
-const initalState = {
-  userName:'',
-  age:'',
-  gender:'',
-  registerPlace:'',
-  licensePlateID:''
-};
-export default (licensePlate = initalState, action) => {
+const intialState = {
+  id:'',
+  base64:''
+}
+export default (state = intialState, action) => {
   switch (action.type) {
     case FETCH_ALL:
       return action.payload;
     case UPLOAD:
-      return [...licensePlate, action.payload];
+      return {...state, base64: action.payload};
     default:
-      return licensePlate;
+      return state;
   }
 };
 

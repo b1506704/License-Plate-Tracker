@@ -1,23 +1,24 @@
-import { FETCH_ALL } from '../constants/actionTypes';
+import { FETCH_ALL, UPLOAD } from '../constants/actionTypes';
 
 import * as api from '../api/index.js';
 
-export const getLD = () => async (dispatch) => {
+//successfully get data from backend
+export const getLp = () => async (dispatch) => {
   try {
-    const { data } = await api.fetchLP();
-
+    const { data } = await api.fetchLp();
+    console.log(data);
     dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
     console.log(error.message);
   }
 };
-
-// export const updatePost = (id, post) => async (dispatch) => {
-//   try {
-//     const { data } = await api.updatePost(id, post);
-
-//     dispatch({ type: UPDATE, payload: data });
-//   } catch (error) {
-//     console.log(error.message);
-//   }
-// };
+//successfully push data to backend
+export const uploadLp = (lp) => async (dispatch) => {
+  try {
+    const { data } = await api.uploadLp(lp);
+    console.log(lp);
+    dispatch({ type: UPLOAD, payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};

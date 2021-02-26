@@ -3,15 +3,15 @@ from flask_restx import Api, Resource, fields
 import joblib
 import numpy as np
 import sys
+from flask_cors import CORS
 
 flask_app = Flask(__name__)
+CORS(flask_app)
 app = Api(app = flask_app, 
 		  version = "1.0", 
 		  title = "Iris Plant identifier", 
 		  description = "Predict the type of iris plant")
-
 name_space = app.namespace('prediction', description='Prediction APIs')
-
 model = app.model('Prediction params', 
 				  {'sepalLength': fields.Float(required = True, 
 				  							   description="Sepal Length", 
@@ -30,7 +30,6 @@ classifier = joblib.load('classifier.joblib')
 
 @name_space.route("/")
 class MainClass(Resource):
-
 	def options(self):
 		response = make_response()
 		response.headers.add("Access-Control-Allow-Origin", "*")

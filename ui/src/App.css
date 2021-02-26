@@ -41,12 +41,13 @@
   font-family: Outerspace;
   src: url('./fonts/Space-lmX5.ttf');
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100%;
   width: 100%;
   font-family: Outerspace;
-  overflow: hidden;
   background: rgba(37, 18, 18, 0.986);
   filter: brightness(.8) contrast(1.2);
 }
@@ -65,17 +66,7 @@ body {
   animation: glow 1.5s ease-in-out infinite alternate-reverse; 
 }
 
-.forms_container {
-  position: absolute;
-  top: 23vh;
-  width: 100%;
-  border-style:dotted;
-  border-color: rgb(241, 233, 241);
-  border-left: transparent;
-  border-right: transparent;
-  /* box-shadow: 0 0 5px #fff; */
-  background: rgba(243, 231, 231, 0.233);
-}
+
 
 @keyframes glow {
   from {
