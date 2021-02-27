@@ -12,8 +12,9 @@
     height: 480px;
     width: 450px;
     cursor: grab;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.5s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     z-index: 999;
   }
   .lp_container_menu:hover {
@@ -63,7 +64,6 @@
   width: 100%; 
 }
 .lp_image_container .lp_image {
-  /* object-fit: contain; */
   height: 100%;
   width: 100%; 
   user-select: none;

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 
 import './LicensePlates.css';
 import LicensePlate from './LicensePlate/LicensePlate';

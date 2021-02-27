@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import FileBase from 'react-file-base64';
 import { useDispatch } from 'react-redux';
+import Draggable from 'react-draggable';
 
-import  { uploadLp } from '../../actions/licensePlate';
 import './SearchBar.css';
-import Button from '../Button/Button';
+import Camera from '../Camera/Camera';
 
-const SearchBar = ({currentBase64, setCurrentBase64}) => {
+const SearchBar = ({setCurrentBase64}) => {
   const dispatch = useDispatch();
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    dispatch(uploadLp(currentBase64));
-  };
+  const handleOnClear = () => {
+    //todo
+  }
   return (
-    <form autoComplete="off" noValidate className="search_bar_container" onSubmit={handleSubmit}>
+    <Draggable bounds="html">
+    <div autoComplete="off" noValidate className="search_bar_container">
       <label> ID </label>
       <div className="base64_container">
         <FileBase className="base64"  type="file" multiple={false} 
@@ -22,8 +22,9 @@ const SearchBar = ({currentBase64, setCurrentBase64}) => {
           }}> 
         </FileBase>
       </div> 
-      <Button type='submit' displayText="&#9737;"></Button>      
-    </form>
+      <Camera onClear={handleOnClear} setCurrentTakenPic={setCurrentBase64}></Camera>      
+    </div>
+    </Draggable>
   );
 };
 export default SearchBar;

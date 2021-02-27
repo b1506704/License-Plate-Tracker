@@ -3,11 +3,10 @@
   top: 23vh;
   width: 100%;
   border-style:dotted;
-  border-color: rgb(241, 233, 241);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-color: rgb(202, 194, 202);
   border-left: transparent;
   border-right: transparent;
   overflow-x: auto;
-  /* box-shadow: 0 0 5px #fff; */
-  background: rgba(243, 231, 231, 0.322);
-  transform: background 0.4s ease-in-out;
+  background: rgb(121, 83, 83);
 }

@@ -14,13 +14,13 @@ const LicensePlate = ({currentBase64}) => {
            LP ID 
         </div>
         <div className="user_info">
-          <div> Owner: <span> Loading...</span>  </div>
-          <div> Age: <span> Loading...</span> </div>
-          <div> Gender: <span> Loading...</span> </div>
-          <div> Register location: <span> Loading...</span> </div>
+          <div> Owner: { currentBase64 ? <span> Mr. A </span> : <span> Loading...</span> } </div>
+          <div> Age: { currentBase64 ? <span> 28 </span> : <span> Loading...</span> } </div>
+          <div> Gender: { currentBase64 ? <span> Male </span> : <span> Loading...</span> }</div>
+          <div> Register location: { currentBase64 ? <span> Mars </span> : <span> Loading...</span> } </div>
         </div>
         <div className="lp_image_container">
-          <img className="lp_image" src={`${currentBase64}`}/>
+          { currentBase64 ? <img className="lp_image" src={`${currentBase64}`}/> : <span> Loading...</span> }
         </div>
       </div>
     </Draggable>

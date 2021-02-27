@@ -4,18 +4,17 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 65px;
+    height: 300px;
     border-radius: 5px;
-    border-bottom-style: transparent;
-    border-top-style:dotted; 
-    border-left-style:dotted; 
-    border-right-style:dotted; 
-    border-color: rgb(241, 233, 241);
+    border-style:dotted; 
+    border-color: rgb(202, 194, 202);
     padding-left: 25px;
     padding-right: 18px;
     right: 2vh; 
-    top: 13.8vh;
+    top: 14vh;
     background-color: rgba(255, 255, 253, 0.26);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: transform 0.3s ease-out;
 }
 .search_bar_container label {
     font-family: Sci-fi;
@@ -35,7 +34,6 @@
     margin-right: 18px;
     margin-left: 18px;
     border-radius: 5px;
-    /* width: 100px; */
     font-family: Subtitle;
     background-color: transparent;
     background-color: rgba(255, 248, 220, 0.37);

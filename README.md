@@ -1,8 +1,9 @@
 # License Plate Tracker
- How to run for the first time.
-- Install Python, Nodejs, environment variable path for both.
+ How to install :
+- Install Python, Nodejs, environment variable path for both (usually automatically)
 - Update pip: `py -m pip install -U pip`
 - Go to service folder, run 
+
 `
 pip install attrs
 
@@ -47,12 +48,23 @@ pip install wget
 pip install aniso8601 
 
 `
-`python model_generator.py`
 
-`python -m flash run` 
+`python model_generator.py`
 
 - Go to ui folder, run
 
 `npm install`
 
+- How to run
+
+    1. Go to service folder, run
+
+`python -m flash run`
+ 
+    2. Go to ui folder, run 
+
 `npm start`
+
+
+
+

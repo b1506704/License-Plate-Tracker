@@ -6,7 +6,6 @@ import * as api from '../api/index.js';
 export const getLp = () => async (dispatch) => {
   try {
     const { data } = await api.fetchLp();
-    console.log(data);
     dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
     console.log(error.message);
@@ -16,7 +15,6 @@ export const getLp = () => async (dispatch) => {
 export const uploadLp = (lp) => async (dispatch) => {
   try {
     const { data } = await api.uploadLp(lp);
-    console.log(lp);
     dispatch({ type: UPLOAD, payload: data });
   } catch (error) {
     console.log(error.message);

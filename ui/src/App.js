@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+
 import LicensePlates from './components/LicensePlates/LicensePlates';
 import SearchBar from './components/SearchBar/SearchBar';
-import { getLp } from './actions/licensePlate';
+import { getLp,uploadLp } from './actions/licensePlate';
 import { useDispatch } from 'react-redux';
 
 const App = () => {
   const [currentImage, setCurrentImage] = useState('');
   const dispatch = useDispatch();
   useEffect(() => {
+    //only jpg/jpge work uptonow
+    dispatch(uploadLp(currentImage));
     dispatch(getLp());
   }, [currentImage, dispatch]);
   
@@ -21,7 +24,7 @@ const App = () => {
         <br />
       </div>
       <LicensePlates currentBase64={currentImage}> </LicensePlates>  
-      <SearchBar currentBase64={currentImage} setCurrentBase64={setCurrentImage}> </SearchBar>
+      <SearchBar setCurrentBase64={setCurrentImage}> </SearchBar>
     </div>
   );
 };
