@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import FileBase from 'react-file-base64';
-import { useDispatch } from 'react-redux';
 import Draggable from 'react-draggable';
-
 import './SearchBar.css';
 import Camera from '../Camera/Camera';
 
 const SearchBar = ({setCurrentBase64}) => {
-  const dispatch = useDispatch();
   const handleOnClear = () => {
     //todo
   }
