@@ -1,53 +1,50 @@
 # License Plate Tracker
- How to install :
+ #How to install :
 - Install Python, Nodejs, environment variable path for both (usually automatically)
 - Update pip: `py -m pip install -U pip`
 - Go to service folder, run 
+-
+`pip install attrs`
 
-`
-pip install attrs
+`pip install Click`
 
-pip install Click
+`pip install Flask`
 
-pip install Flask
+`pip install Flask-Cors`
 
-pip install Flask-Cors
+`pip install flask-restx`
 
-pip install flask-restx
+`pip install itsdangerous`
 
-pip install itsdangerous
+`pip install Jinja2`
 
-pip install Jinja2
+`pip install jsonschema`
 
-pip install jsonschema
+`pip install MarkupSafe`
 
-pip install MarkupSafe
+`pip install numpy`
 
-pip install numpy
+`pip install pandas`
 
-pip install pandas
+`pip install pyrsistent`
 
-pip install pyrsistent
+`pip install python-dateutil`
 
-pip install python-dateutil
+`pip install pytz`
 
-pip install pytz
+`pip install scikit-learn`
 
-pip install scikit-learn
+`pip install scipy`
 
-pip install scipy
+`pip install six`
 
-pip install six
+`pip install sklearn`
 
-pip install sklearn
+`pip install Werkzeug`
 
-pip install Werkzeug
+`pip install wget`
 
-pip install wget
-
-pip install aniso8601 
-
-`
+`pip install aniso8601`
 
 `python model_generator.py`
 
@@ -55,13 +52,12 @@ pip install aniso8601
 
 `npm install`
 
-- How to run
-
-    1. Go to service folder, run
+ #How to run:
+- Go to service folder, run
 
 `python -m flash run`
- 
-    2. Go to ui folder, run 
+
+- Go to ui folder, run 
 
 `npm start`
 
