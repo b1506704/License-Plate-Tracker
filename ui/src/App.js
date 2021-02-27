@@ -3,16 +3,23 @@ import './App.css';
 
 import LicensePlates from './components/LicensePlates/LicensePlates';
 import SearchBar from './components/SearchBar/SearchBar';
-import { getLp,uploadLp } from './actions/licensePlate';
+import { uploadLp } from './actions/licensePlate';
 import { useDispatch } from 'react-redux';
 
 const App = () => {
   const [currentImage, setCurrentImage] = useState('');
   const dispatch = useDispatch();
+  const testData = {
+      a1: 2.1,
+      a2: 2,
+      a3: 12,
+      a4: 5
+  };
   useEffect(() => {
     //only jpg/jpge work uptonow
     dispatch(uploadLp(currentImage));
-    dispatch(getLp());
+    // test data
+    // dispatch(uploadLp(testData));
   }, [currentImage, dispatch]);
   
   return (

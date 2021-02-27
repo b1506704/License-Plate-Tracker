@@ -3,6 +3,7 @@ import axios from 'axios';
 const url = 'http://127.0.0.1:5000/prediction/';
 
 //api for fetching asynch prediction endpoints from backend
-export const fetchLp = () => axios.post(url);
+// export const fetchLp = () => axios.post(url);
+
 //api for uploading images to server
 export const uploadLp = (newLp) => axios.post(url, newLp);
