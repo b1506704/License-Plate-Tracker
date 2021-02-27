@@ -3,6 +3,7 @@
 - Install Python, Nodejs, environment variable path for both (usually automatically)
 - Update pip: `py -m pip install -U pip`
 - Go to service folder, run 
+
 `pip install attrs`
 
 `pip install Click`
