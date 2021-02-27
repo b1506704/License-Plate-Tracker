@@ -1,9 +1,8 @@
 # License Plate Tracker
- #How to install :
+ # How to install :
 - Install Python, Nodejs, environment variable path for both (usually automatically)
 - Update pip: `py -m pip install -U pip`
 - Go to service folder, run 
--
 `pip install attrs`
 
 `pip install Click`
@@ -52,7 +51,7 @@
 
 `npm install`
 
- #How to run:
+ # How to run:
 - Go to service folder, run
 
 `python -m flash run`
