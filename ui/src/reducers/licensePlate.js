@@ -1,7 +1,7 @@
 import { FETCH_ALL, UPLOAD } from '../constants/actionTypes';
 
 const intialState = {
-  id:'',
+  id:'test',
   base64:''
 }
 export default (state = intialState, action) => {

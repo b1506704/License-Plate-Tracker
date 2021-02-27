@@ -54,7 +54,6 @@
 .lp_image_container {
   position: absolute;
   bottom: 0vh;
-  /* border: ridge 2px #00010288; */
   display: flex;
   padding: 3px;
   align-items: center;

@@ -4,7 +4,7 @@ import './App.css';
 import LicensePlates from './components/LicensePlates/LicensePlates';
 import SearchBar from './components/SearchBar/SearchBar';
 import { uploadLp } from './actions/licensePlate';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const App = () => {
   const [currentImage, setCurrentImage] = useState('');
@@ -15,12 +15,15 @@ const App = () => {
       a3: 12,
       a4: 5
   };
+  //current state of App
+  const base64 = useSelector(state => state.licensePlate.base64);
   useEffect(() => {
     //only jpg/jpge work uptonow
     dispatch(uploadLp(currentImage));
+    // console.log(currentImage);
     // test data
     // dispatch(uploadLp(testData));
-  }, [currentImage, dispatch]);
+  }, [currentImage]);
   
   return (
     <div className="container">
