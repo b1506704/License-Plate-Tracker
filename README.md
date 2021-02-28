@@ -55,7 +55,7 @@
  # How to run:
 - Go to service folder, run
 
-`python -m flash run`
+`python -m flask run`
 
 - Go to ui folder, run 
 
